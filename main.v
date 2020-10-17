@@ -2,7 +2,11 @@ module main
 
 fn foo() ? {
 	println('Hello World!')
-	return error("omg!")
+	return error('omg!')
+}
+
+fn bar() {
+	foo()?
 }
 
 fn main() {
